@@ -1,0 +1,484 @@
+body {
+	 background-color: darkblue;
+	 padding: 0;
+	 margin: 0;
+	font-family: monaco;
+//	 color: white;
+ }
+ 
+ button:focus {
+	outline: none;
+}
+ 
+ input:focus {
+	outline: none;
+}
+ 
+ textarea:focus {
+	outline: none;
+}
+ 
+ img:focus {
+	outline: none;
+}
+ 
+ img {
+	border: 0px solid;
+}
+
+pre {
+	margin: 0;
+}
+ 
+.hidden {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.centerHolder {
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
+.placeholder {
+	color: white;
+	font-size: 30px;
+	padding: 2cm 1cm;
+	text-align: center;
+}
+
+.bigButton {
+ 		font-size: 40px;
+		font-weight: 700;
+		padding: 1cm 3cm;
+ 		border-radius: 10px;
+ 		box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+ 		border: 0px solid;
+ 		color: white;
+ 		transition: background-color 0.3s;
+ 		background-color: darkblue;
+ 	}
+ 	
+.bigButton:active {
+ 	background-color: rgba(0, 0, 0, 0.2);
+ }
+ 	
+ header {
+	display: block;
+	width: 100%;
+	background-color: indigo;
+	line-height: 2.8cm;
+	font-size: 35px;
+	color: white;
+	font-weight: 700;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 5px 0 blue;
+}
+
+ footer {
+	display: block;
+	width: 100%;
+	background-color: indigo;
+	line-height: 2.8cm;
+	font-size: 35px;
+	color: white;
+	font-weight: 700;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	box-shadow: 0 0 5px 0 blue;
+}
+
+footer #bottomNav {
+	width: 100%;
+	text-align: center;
+}
+
+footer #bottomNav [selected] {
+	color: orange;
+}
+
+footer #bottomNav .option {
+	border-radius: 40px;
+	transition: background-color 0.2s;
+}
+
+footer #bottomNav .option:active {
+	background-color:  rgba(0, 0, 0, 0.1);
+}
+
+footer #hint {
+	font-size: 20px;
+}
+
+
+#body {
+	position: fixed;
+	top: 2.8cm;
+	height: 80%;
+	width: 100%;
+	overflow-y: scroll;
+}
+ 
+#body .page {
+	display: none;
+}
+
+#body #mainContent {
+	display: block;
+}
+ 
+#body #loader {
+	background-color:  rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+ 
+#body #loader #roller {
+	background-color:  rgba(0, 0, 0, 0);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 4cm;
+	width: 4cm;
+	border: 15px solid rgba(0, 0, 0, 0.1);
+	border-top: 15px solid white;
+	border-radius: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	animation: spin 0.8s linear infinite;
+}
+
+.siteBox {
+	width: 7cm;
+	height: 8.5cm;
+	border-radius: 10px;
+	background-color:  rgba(0, 0, 0, 0.01);
+	border: 4px solid indigo;
+	box-shadow: 0 0 15px 0 blue;
+	margin: 3mm;
+	display: inline-block;
+	position: relative;
+}
+
+.siteBox #iconHolder {
+	text-align: center;
+	padding: 5mm 0;
+}
+ 
+.siteBox #iconHolder img {
+	height: 5cm;
+	width: 5cm;
+	background-color:  rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+}
+ 
+.siteBox #contentHolder {
+	text-align: center;
+	padding: 1mm 0;
+	overflow-x: scroll;
+}
+ 
+.siteBox #contentHolder #siteName {
+	color:  white;
+	font-size: 35px;
+	display: block;
+}
+ 
+.siteBox #contentHolder #siteUrl {
+	color:  lightblue;
+	font-size: 20px;
+	font-family: times;
+	line-height: 1cm,
+}
+ 
+.siteBox #loader {
+	background-color:  white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 1cm;
+	width: 1cm;
+	border: 5px solid rgba(0, 0, 0, 0.1);
+	border-top: 5px solid white;
+	border-radius: 50%;
+	animation: spin 0.8s linear infinite;
+}
+
+	.heading {
+		padding: 2cm 0 8mm 3mm;
+	}
+	
+	.heading #text {
+		font-size: 40px;
+		color: white;
+		font-weight: 700;
+	}
+	
+.heading #number {
+	border-radius: 50%;
+	background-color:  purple;
+	color: white;
+	width: 1.3cm;
+	height: 1.3cm;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.3cm;
+	text-align: center;
+	display: inline-block;
+	transform: translateY(-2mm);
+}
+	
+	
+
+	.form .input {
+		width: 96%;
+		height: 3cm;
+		background-color: rgba(0, 0, 0, 0.01);
+		font-size: 35px;
+		border-radius: 10px 0 0 10px;
+		box-shadow: 0 0 5px 0 black;
+		border: 0px solid;
+		padding: 0 5mm;
+		margin: 0 2%;
+		color: white;
+	}
+
+	.form .pasteButton {
+		width: 10%;
+		height: 3cm;
+		background-color: darkgreen;
+		font-size: 35px;
+		border-radius: 0 10px 10px 0;
+		box-shadow: 0 0 5px 0 black;
+		border: 0px solid;
+		margin: 0;
+		transform: translateX(-2mm) translateY(-1mm);
+		color: white;
+	}
+
+	.form [type=submit] {
+		width: 98%;
+		height: 3cm;
+		background-color: rgba(0, 0, 0, 0.2);
+		font-size: 35px;
+		border-radius: 10px;
+		box-shadow: 0 0 5px 0 black;
+		border: 0px solid;
+		margin: 1cm 1%;
+		color: white;
+		transition: background-color 0.2s;
+	}
+	
+	.form [type=submit]:active {
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	
+ #toast {
+	position: fixed;
+	bottom: 2cm;
+	display: none;
+	border-radius: 10px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	line-height: 7mm;
+	font-size: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 7mm 1cm;
+	opacity: 0;
+	text-align: center;
+	max-width: 80%;
+}
+
+
+ #bigDisplay {
+ 	width: 100%;
+ 	height: 100%;
+	background-color:  rgba(0, 0, 0, 0.3);
+	position: absolute;
+ 		top: 0;
+ 		left: 0;
+ 		display: none;
+ 		z-index: 9;
+ }
+ 
+ #bigDisplay #topic {
+ 	color: white;
+ 	font-size: 40px;
+ 	font-weight: 700;
+ 	display: inline-block;
+ }
+ 
+ #bigDisplay .comment {
+ 	color: white;
+ 	font-size: 20px;
+ }
+ 
+	 #bigDisplay #main {
+ 		width: 86%;
+ 		margin: 0 5%;
+ 		background-color: darkblue;
+ 		margin-top: 50%;
+ 		transform: translateY(-50%);
+ 		max-height: 20cm;
+ 		overflow-y: scroll;
+ 		padding: 2cm 2%;
+ 		text-align: center;
+ 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+ 		position: relative;
+	 }
+ 	
+	 #bigDisplay #background {
+ 		width: 100%;
+ 		height: 100%;
+ 		position: absolute;
+ 		left: 0;
+ 		top: 0;
+	 }
+ 	
+ 
+.optionHolder .option {
+	width: 96%;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	padding: 2mm 2%;
+	transition: background-color 0.2s;
+}
+
+.optionHolder .option #mainText {
+	font-size: 33px;
+	line-height: 3cm;
+	color: white;
+}
+
+.optionHolder .option #cornerText {
+	font-size: 25px;
+	line-height: 3cm;
+	color: white;
+	float: right;
+}
+
+.optionHolder .option #bottomText {
+	font-size: 18px;
+	line-height: 0cm;
+	color: white;
+	display: block;
+	transform: translateY(-3mm);
+}
+
+.optionHolder .option:active {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+	
+	#cardPaymentForm {
+		width: 100%;
+		text-align: center;
+	}
+	
+	#cardPaymentForm form {
+		
+		box-shadow: 0 0 5px 0 black;
+		width: 96%;
+		margin: 0 2%;
+	}
+
+	#cardPaymentForm [name=cardNumber] {
+		width: 85%;
+		height: 3cm;
+		background-color: rgba(0, 0, 0, 0.1);
+		font-size: 35px;
+		border-radius: 10px 0 0 10px;
+		box-shadow: 0 0 5px 0 black;
+		border: 0px solid;
+		padding: 0 5mm;
+		margin: 5mm 0;
+		color: white;
+	}
+
+	#cardPaymentForm [name=cvv] {
+		width: 2cm;
+		height: 3cm;
+		background-color: rgba(0, 0, 0, 0.1);
+		font-size: 35px;
+		border-radius: 10px;
+		box-shadow: 0 0 5px 0 black;
+		border: 0px solid;
+		padding: 0 5mm;
+		margin: 0 1cm 0 0;
+		color: white;
+	}
+	
+	#cardPaymentForm #expiryDateHolder {
+		border-radius: 10px 0 0 10px;
+		box-shadow: 0 0 5px 0 black;
+		display: inline-block;
+	}
+
+	#cardPaymentForm [name=expiryDateMonth] {
+		width: 2cm;
+		height: 3cm;
+		background-color: rgba(0, 0, 0, 0.1);
+		font-size: 35px;
+		border-radius: 10px 0 0 10px;
+		box-shadow: 0;
+		border: 0px solid;
+		padding: 0 5mm;
+		margin: 0;
+		color: white;
+		transform: translateX(3mm);
+	}
+
+	#cardPaymentForm #expiryDateSlash {
+		width: 3mm;
+		line-height: 3cm;
+		font-size: 35px;
+		border: 0px solid;
+		margin: 0;
+		color: white;
+		display: inline-block;
+ 		background-color: rgba(0, 0, 0, 0.1);
+		z-index: 9;
+	//	transform: translateX(-3mm);
+	}
+
+	#cardPaymentForm [name=expiryDateYear] {
+		width: 2cm;
+		height: 3cm;
+		background-color: rgba(0, 0, 0, 0.1);
+		font-size: 35px;
+		border-radius: 0 10px 10px 0;
+		box-shadow: 0;
+		border: 0px solid;
+		padding: 0 5mm;
+		margin: 0;
+		color: white;
+		transform: translateX(-3mm);
+	}
+
+	#cardPaymentForm [type=submit] {
+		width: 96%;
+		height: 3cm;
+		background-color: rgba(0, 0, 0, 0.3);
+		font-size: 35px;
+		border-radius: 10px;
+		box-shadow: 0 0 5px 0 black;
+		border: 0px solid;
+		margin: 1cm 0;
+		color: white;
+		transition: background-color 0.2s;
+	}
+	
+#cardPaymentForm #power {
+	color: white;
+ 	font-size: 20px;
+}
